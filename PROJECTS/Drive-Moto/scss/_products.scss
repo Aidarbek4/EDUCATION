@@ -1,0 +1,228 @@
+.products {
+  .tabs__content {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  &__title {
+    margin: 0 0 25px;
+    font-family: Barlow, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__tabs {
+    margin-bottom: 25px;
+  }
+  &__tab {
+    color: #2F3035;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+    &+& {
+      margin-left: 50px;
+    }
+  }
+  &__tab.tabs__tab--active {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: 2px solid #1C62CD;
+  }
+  &__item {
+    position: relative;
+    width: 270px;
+    height: 403px;
+    padding: 52px 20px 31px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    transition: all 0.3s;
+    &-img.img-1 {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    &-img.img-2 {
+      margin-top: 31px;
+      margin-bottom: 40px;
+    }
+    &-img.img-3 {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    &:hover {
+      background-color: white;
+      border-radius: 3px;
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    }
+    &:hover &-title {
+      color: #1C62CD;
+    }
+    &:hover &-price {
+      color: #1C62CD;
+    }
+    &+& {
+      margin-left: 30px;
+    }
+    &--sale::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "sale";
+      padding: 6px 15px 8px;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.7em;
+      color: #fff;
+      background-color: #1C62CD;
+    }
+    &-title {
+      margin-top: 14px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #2F3035;
+    }
+    &-price {
+      margin-top: 25px;
+      font-family: Barlow, sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: #2f3035;
+    }
+    &-tip {
+      position: absolute;
+      top: 30%;
+      left: 20px;
+      right: 20px;
+      padding: 18px 21px;
+      background-color: transparetize(#fff, 0.1);
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      box-shadow: 0px 0px 15px transparentize(#000, 0.8);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    &:hover &-tip {
+      opacity: 1;
+      color: #2f3035;
+    }
+    &-btn {
+      padding: 3px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      &:active path {
+        fill: #2F3035;
+        stroke: #2F3035;
+        stroke-width: 0;
+      }
+    }
+    &-fav {
+      position: absolute;
+      top: 16px;
+      right: 17px;
+      & path {
+        fill: #2F3035;
+      }
+    }
+    &-cart {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px 15px 8px;
+      background-color: #1c62cd;
+      border-radius: 10px 0px 0px 0px;
+      & path {
+        fill: #fff;
+      }
+    }
+    &--notify-text {
+      display: none;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 8px;
+    }
+    &--notify-link {
+      display: none;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1c62cd;
+      text-decoration: underline;
+    }
+    &-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      .slick-list {
+        overflow: hidden;
+      }
+      .slick-track {
+        display: flex;
+        position: relative;
+      }
+      .slick-prev.slick-arrow {
+        position: absolute;
+        top: 50%;
+        border: none;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        left: -36px;
+        width: 16px;
+        height: 29px;
+        background-color: transparent;
+        background-image: url(../images/arrow-black.svg);
+        transform: translateY(-50%);
+        color: #2f3035;
+        cursor: pointer;
+      }
+      .slick-next.slick-arrow {
+        position: absolute;
+        top: 50%;
+        right: -36px;
+        width: 16px;
+        height: 29px;
+        border: none;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        background-color: transparent;
+        background-image: url(../images/black-arrow.svg);
+        transform: rotate(0deg) translateY(-50%);
+        color: #2f3035;
+        cursor: pointer;
+      }
+    }
+    &.products__item-not-available &--notify-link{
+      display: block;
+      text-decoration: underline;
+      margin-top: 13px;
+    }
+    &.products__item-not-available &--notify-text{
+      display: block;
+      color: #2f3035;
+    }
+    &.products__item-not-available &-cart{
+      display: none;
+    }
+    &.products__item-not-available &-price{
+      display: none;
+    }
+    &.products__item-not-available &-tip{
+      display: none;
+    }
+  }
+  .sr-only {
+    font-size: 0;
+  }
+}

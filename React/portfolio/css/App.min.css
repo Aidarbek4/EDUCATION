@@ -1,0 +1,28 @@
+.app {
+  height: 100vh;
+}
+
+.app__sections {
+  position: relative;
+  top: 70px;
+  height: -webkit-calc(100vh - 70px);
+  height: calc(100vh - 70px);
+  width: 100%;
+  -webkit-scroll-snap-type: y mandatory;
+      -ms-scroll-snap-type: y mandatory;
+          scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+.app__sections::-webkit-scrollbar {
+  display: none;
+}
+
+.app > * {
+  width: 100vw;
+  height: -webkit-calc(100vh - 70px);
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+}

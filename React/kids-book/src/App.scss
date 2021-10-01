@@ -1,0 +1,36 @@
+@import "assets/scss/fonts";
+@import "assets/scss/variables";
+@import "assets/scss/libs/normalize";
+
+@import "assets/scss/components/header";
+@import "assets/scss/components/button";
+@import "assets/scss/components/categories";
+@import "assets/scss/components/sort";
+@import "assets/scss/components/book-block";
+@import "assets/scss/components/content";
+@import "assets/scss/components/cart";
+
+body {
+  background-color: $background;
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+
+  &--cart {
+    max-width: 820px;
+    margin: 90px auto;
+    .content__title {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.btn {
+  background: #01996D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  color: #fff;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.btn:hover {
+  background: #03b885;
+  font-weight: bold;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 31px;
+  background-color: #fff;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 40px;
+}
+
+.navbar__link {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #292929;
+}
+
+.navbar__link:hover {
+  color: #03b885;
+}
+
+.navbar__btn {
+  padding: 13px 50px;
+}
+
+.navbar__sign-in {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 15px;
+}
+
+.navbar__sign-in:hover {
+  color: #03b885;
+}
+
+.promo {
+  padding-bottom: 336px;
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+
+.promo__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 74px;
+  padding-top: 175px;
+  color: #01996D;
+}
+
+.promo__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 31px;
+  margin-top: 30px;
+  margin-bottom: 68px;
+  color: #484848;
+}
+
+.promo__headline {
+  max-width: 440px;
+}
+
+.header-top {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.footer {
+  background-color: #245852;
+  padding-top: 95px;
+  padding-bottom: 144px;
+}
+
+.footer__link.logo {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer__list-item + .footer__list-item {
+  margin-top: 60px;
+}
+
+.footer__link {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer__link:hover {
+  color: #03b885;
+}

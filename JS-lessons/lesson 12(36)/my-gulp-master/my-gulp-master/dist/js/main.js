@@ -1,0 +1,1 @@
+"use strict";var message="hello",hello=function(){console.log("hello")};

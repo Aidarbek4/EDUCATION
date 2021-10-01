@@ -1,0 +1,12 @@
+.promotion {
+  margin-top: 86px;
+  margin-bottom: 72px;
+  &__inner {
+    font-size: 0;
+    height: 165px;
+    background-image: url(../images/promotion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

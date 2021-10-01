@@ -1,0 +1,59 @@
+.catalog {
+  &__title {
+    font-family: "SFProDisplay", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;   
+    color: #2F3035;
+    margin-bottom: 26px;
+  }
+  &__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    &-link {
+      padding: 4px 25px;
+      color: rgba(47, 48, 53, 0.7);
+      background-color: #f0f0f4;
+      border-radius: 3px;
+      &+&{
+        margin-left: 10px;
+      }
+      &-by {
+        margin-right: 34px;
+      }
+    }
+  }
+  &__veiws {
+    display: flex;
+    align-items: center;
+  }
+  &__veiw button {
+    background-color: transparent;
+    padding: 0;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+  .sr-only {
+    font-size: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .products__item {
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    &-img {
+      width: 100%;
+    }   
+  }
+}

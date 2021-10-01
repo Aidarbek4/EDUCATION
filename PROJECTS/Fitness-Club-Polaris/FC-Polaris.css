@@ -1,0 +1,30 @@
+html {
+    background: url(images/fit.jpg);
+    color: white;
+}
+
+div {
+    background-color: rgba(0, 0, 0, .85);
+    margin: 30px 20px;
+    border-radius: 30px;
+    border-color: darkgrey;
+    border-width: 15px;
+    padding: 30px 25px;
+}
+
+footer  {
+    background-image: linear-gradient(to bottom, black);
+    padding: 100px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.avatar {
+    border-radius: 400px;
+    float: left;
+}
+
+ul {
+    list-style: none;
+}

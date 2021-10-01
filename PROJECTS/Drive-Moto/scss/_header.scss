@@ -1,0 +1,42 @@
+.header {
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 122px;
+        font-family: "SFProDisplay";
+        font-weight: 700;
+    }
+    &__info {
+        display: flex;
+    }
+    &__address {
+        position: relative;
+        width: 265px;
+        margin-right: 60px;
+        padding-left: 30px;
+        font-family: "SFProDisplay", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        &:hover {
+          color: #1c62cd;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            top: -10px;
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-image: url(../images/gps.svg);
+        }
+    }
+    &__bottom-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F0F0F4;
+    }
+}

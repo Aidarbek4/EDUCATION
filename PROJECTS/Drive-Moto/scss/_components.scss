@@ -1,0 +1,21 @@
+.components {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    &__link {
+        display: block;
+        font-family: "SFProDisplay", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 53px;
+        text-transform: capitalize;
+        color: #2F3035;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: linear 0.3s;
+        &:hover {
+            border-bottom: 3px solid #1c62cd;
+        }
+    }
+}

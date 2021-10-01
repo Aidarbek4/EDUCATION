@@ -1,0 +1,125 @@
+.btn {
+  background: #01996D;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  &:hover {
+    background: #03b885;
+    font-weight: bold;
+  }
+}
+.navbar {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 31px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__item + &__item {
+    margin-left: 40px;
+  }
+  &__link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #292929;
+    &:hover {
+      color: #03b885;
+    }
+  }
+  &__btn {
+    padding: 13px 50px;
+  }
+  &__sign-in {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 15px;
+    &:hover {
+      color: #03b885;
+    }
+  }
+}
+.promo {
+  padding-bottom: 336px;
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 74px;
+    padding-top: 175px;
+    color: #01996D;
+  }
+  &__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    margin-top: 30px;
+    margin-bottom: 68px;
+    color: #484848;
+  }
+  &__headline {
+    max-width: 440px;
+  }
+}
+.header {
+  &-top {
+  border-bottom: 1px solid #D6D6D6;  
+  }
+}
+
+.footer {
+  background-color: #245852;
+  padding-top: 95px;
+  padding-bottom: 144px;
+  &__link.logo {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  &__list {
+    &-item + &-item {
+      margin-top: 60px;
+    }
+  }
+  &__link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    &:hover {
+      color: #03b885;
+    }
+  }
+}

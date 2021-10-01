@@ -1,0 +1,68 @@
+header {
+    background-color:dodgerblue;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+    font-family: fantasy;
+}    
+
+h2 {
+    color: midnightblue;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+h3 {
+    color: purple;
+    font-size: 25px;
+}
+
+.adress {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: khaki;
+}
+
+div {
+    background-color: white;
+    padding: 20px 30px;
+    margin: 35px 25px;
+    border-radius: 25px;
+}
+
+div p {
+    color: paleturquoise;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.contackts {
+    background-color: grey;
+}
+
+div {
+    background-color: rgb(132, 162, 218);
+}
+
+html {
+    background: url(images/zima.jpg);
+}
+ .zima {
+     border-radius: 100%;
+ }
